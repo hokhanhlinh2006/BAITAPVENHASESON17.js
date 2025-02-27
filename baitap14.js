@@ -1,0 +1,11 @@
+let r = parseFloat(prompt("Nhập bán kính hình trụ:"));
+let h = parseFloat(prompt("Nhập chiều cao hình trụ:"));
+const PI = Math.PI;
+let chuviday = 2 * PI * r; 
+let dientichxungquanh = 2 * PI * r * h; 
+let dientichtoanphan = dientichxungquanh + 2 * PI * r * r; 
+let thetich = PI * r * r * h; 
+console.log(`Chu vi đáy: ${chuviday.toFixed(2)}`);
+console.log(`Diện tích xung quanh: ${dientichxungquanh.toFixed(2)}`);
+console.log(`Diện tích toàn phần: ${dientichtoanphan.toFixed(2)}`);
+console.log(`Thể tích hình trụ: ${thetich.toFixed(2)}`);
